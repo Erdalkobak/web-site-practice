@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* GLOBAL */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    font-size: 15px;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+/* HEADER */
+
+header{
+    background-color: #35424a;
+    min-height: 80px;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+}
+
+.logo .orange{
+    color: orangered;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* SECTİON UP */
+
+.up{
+    min-height: 400px;
+    background-image: url(pexels-picjumbocom-196644.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.up .container{
+    text-align: center;
+    color: black;
+}
+
+.up .container h1{
+    padding-top: 11%;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+/* SECTİON MİDDLE */
+
+.middle{
+    background-color:#35424a ;
+    
+}
+
+.middle .container{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.middle .container h4{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.middle .container .right input{
+    padding: 8px;
+    min-width: 250px;
+    border: none;
+
+}
+
+.middle .container .right{
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.middle .container .right button{
+    padding: 8.7px;
+    color: white;
+    background-color:orangered ;
+    border: none;
+}
+
+/* SECTİON BOTTOM */
+
+.bottom{
+    background-color: #f4f4f4;
+}
+
+.bottom .container{
+    min-height: 300px;
+}
+
+.bottom .container .boxes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+
+.bottom .container .boxes .box{
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.bottom .container .boxes .box p{
+    text-align: center;
+    max-width: 350px;
+}
+
+/* FOOTER */
+
+footer{
+    min-height: 60px;
+    background-color: orangered;
+}
+
+footer .container{
+    color: white;
+    text-align: center;
+    padding-top: 20.8px;
+    font-size: 16px;
+}
+
+@media (max-width: 672px){
+    .bottom .container .boxes{
+        display: block;
+    }
+}
+
+@media (max-width: 760px){
+    .middle .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+    }
+}
